@@ -93,9 +93,40 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-
-
 #topbar-search-input:focus {
     outline: none;
+}
+
+#topbar-menu-logo {
+    float: right;
+
+    margin-right: min(10px, .3vw);
+
+    height: 70%;
+
+    position: float;
+    top: 50%;
+    transform: translate(0,20%);
+}
+
+
+
+
+/*TOP IMAGE*/
+#top-image-container {
+    padding-top: 14vh;
+
+    background-color: wheat;
+
+    width: 100vw;
+    height: fit-content;
+}
+
+#top-image-image {
+
+    width: 100vw;
+
+    position: absolute;
+    top: 50vh;
+    transform: translate(0%, -40vh);
 }
