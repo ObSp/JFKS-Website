@@ -6,19 +6,19 @@
 
     <title>John F. Kennedy School Berlin</title>
 
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/indexLight.css">
     <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 
-    <script src="javascript/index.js" defer></script>
+    <script src="javascript/index.js" defer type="module"></script>
 </head>
 <body>
-    <div id="topbar">
+    <div id="topbar" class="dark-mode">
 
-        <img id="topbar-school-logo" src="media/school_logo.png" alt="">
+        <a href="index.html"><img id="topbar-school-logo" src="media/school_logo_regular.png" alt=""></a>
 
         <div id="topbar-search-container">
             <img id="topbar-search-icon" src="media/search_icon.png" alt="">
@@ -26,7 +26,7 @@
             <input id="topbar-search-input" type="text" placeholder="JFKS Search">
         </div>
 
-        <img id="topbar-menu-logo" src="media/menu_logo.png" alt="">
+        <img id="topbar-menu-logo" src="media/menu_logo_light.png" alt="">
 
         
     </div>
@@ -34,8 +34,31 @@
         
         <img id="top-image-image" src="media/top-images/sport.png" alt="">
 
+        <div class="top-image-arrow-container top-image-arrow-left"><img class="top-image-arrow" src="media/arrow_icon_right.png" alt=""></div>
+        <div class="top-image-arrow-container top-image-arrow-right"><img class="top-image-arrow" src="media/arrow_icon_right.png" alt=""></div>
 
     </div>
+
+    <div id="awards-container">
+        <ul id="awards-list">
+            <li class="awards-list-item"><a href="https://www.neasc.org/"><img  src="media/neasc.png" alt=""></a></li>
+            <li class="awards-list-item"><a href="https://jfks.de/titelverleihung-schule-ohne-rassismus-schule-mit-courage/"><img src="media/school_no_racism.png" alt=""></a></li>
+            <li class="awards-list-item" style="padding-right: 0;"><a href="https://www.bermun.de/"><img src="media/bermune_logo.png" alt=""></a></li>
+        </ul>
+    </div>
+
+    <div id="latest-news-container">
+        <h1 id="latest-news-header">Latest News</h1>
+
+        <div id="latest-news-middle" class="latest-news-item">
+            <a href=""><h2 class="latest-news-item-header">Campus Clean Up and Garden Day – 08.09.</h2></a>
+
+        </div>
+
+    </div>
+
+
+    <div id="page-progress-bar"></div>
 
 
 

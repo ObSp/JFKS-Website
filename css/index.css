@@ -21,6 +21,12 @@ body {
     color: white;
 }
 
+img {
+    user-select: none;
+}
+
+/* MISC CLASSES*/
+
 
 /* TOPBAR */
 
@@ -28,11 +34,13 @@ body {
     width: 100vw;
     height: 10vh;
 
-    background-color: rgba(55, 55, 55, 1);
+    background-color: rgb(55, 55, 55, 1);
 
     position: fixed;
 
     filter: drop-shadow(rgb(27, 27, 27) 0px 4px 4px);
+
+    z-index: 1000;
 }
 
 #topbar-school-logo {
@@ -102,11 +110,11 @@ body {
 
     margin-right: min(10px, .3vw);
 
-    height: 70%;
+    height: 55%;
 
     position: float;
     top: 50%;
-    transform: translate(0,20%);
+    transform: translate(0,35%);
 }
 
 
@@ -116,17 +124,81 @@ body {
 #top-image-container {
     padding-top: 14vh;
 
-    background-color: wheat;
-
     width: 100vw;
-    height: fit-content;
+    height: 20vw;
 }
 
 #top-image-image {
 
-    width: 100vw;
+    width: 85vw;
+
+    border-radius: 2.5vw;
 
     position: absolute;
-    top: 50vh;
-    transform: translate(0%, -40vh);
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.top-image-arrow {
+    width: 4vw;
+    
+    margin-left: -.1vw;
+    margin-top: -.2vw;
+}
+
+.top-image-arrow-container {
+    border-radius: 100px;
+
+    background-color: rgb(75, 75, 75);
+
+    margin-top: 7vw;
+
+    width: 3.5vw;
+    height: 3.5vw;
+
+    display: inline-block;
+}
+
+.top-image-arrow-left {
+    rotate: 180deg;
+    margin-left: 1.5vw;
+}
+
+.top-image-arrow-right {
+    float: right;
+    margin-right: 1.5vw;
+}
+
+/* AWARDS */
+#awards-container {
+    width: 100vw;
+    height: 20vh;
+}
+
+#awards-list {
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+
+    overflow: hidden;
+
+    width: fit-content;
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.awards-list-item {
+    float: left;
+
+    padding-right: 2vw;
+}
+
+.awards-list-item > img {
+    display: block;
+    height: 10vw;
+
+    border-radius: 1.5vw;
 }
