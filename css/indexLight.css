@@ -226,6 +226,13 @@ img {
     float: left;
 
     padding-right: 2vw;
+
+    
+    transition: all .5s;
+}
+
+.awards-list-item:hover {
+    filter:brightness(.8);
 }
 
 .awards-list-item a img {
@@ -241,7 +248,7 @@ img {
     text-align: center;
 
     width: 100vw;
-    height: fit-content;
+    height: 26vw;
 }
 
 #latest-news-header {
@@ -327,6 +334,15 @@ img {
     color: #0358a8bd;
 
     font-size: 1vw
+}
+
+
+/*CALENDAR*/
+
+#calendar-container {
+    background-color: #0084ff;
+
+    text-align: center;
 }
 
 /*PROGRESS BAR*/
