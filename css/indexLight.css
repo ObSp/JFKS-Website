@@ -125,7 +125,6 @@ img {
 
     height: 55%;
 
-    position: float;
     top: 50%;
     transform: translate(0,35%);
 }
@@ -252,7 +251,7 @@ img {
 }
 
 #latest-news-header {
-    font-size: min(5vh, 5vw);
+    font-size: 3vw;
 
     color: #1d6cdb;
 }
@@ -269,15 +268,17 @@ img {
 
     border-radius: 2vw;
 
-    filter: drop-shadow(27px 45px 27px rgb(190, 190, 190));
+    filter: drop-shadow(1vw 2vw 1vw rgb(190, 190, 190));
+}
 
-    a {
-        text-decoration: none;
-    }
+#latest-news-middle a {
+    text-decoration: none;
+}
 
-    h2 {
-        color: #0084ff;
-    }
+#latest-news-middle a h2 {
+    color: #0084ff;
+
+    font-size: 1.8vw;
 }
 
 #latest-news-left {
@@ -298,23 +299,19 @@ img {
   
     margin-top: 2%;
 
-    filter: drop-shadow(2px 2px 27px rgb(190, 190, 190));
+    filter: drop-shadow(.1vw .1vw 1vw rgb(190, 190, 190));
 
     border-radius: 2vw;
-    
-    a {
-        text-decoration: none;
-    }
-
-    h2 {
-        color: #0084ffc7;
-
-        font-size: 1.3vw
-    }
 }
 
-.latest-news-item-header {
-    font-size: 1.7vw
+.latest-news-item-side a {
+    text-decoration: none;
+}
+
+.latest-news-item-side a h2 {
+    color: #0084ffc7;
+    
+    font-size: 1.3vw
 }
 
 .latest-news-item-desc {
@@ -340,9 +337,63 @@ img {
 /*CALENDAR*/
 
 #calendar-container {
-    background-color: #0084ff;
-
     text-align: center;
+
+    width: 100vw;
+    height: 27vw;
+
+    margin-top: -2.7vw;
+
+    z-index: 2;
+}
+
+#calendar-header {
+    font-size: 3vw;
+
+    color: #1d6cdb;
+}  
+
+#calendar-item-middle {
+    width: 21vw;
+    height: 24vw;
+
+    margin-top: -1vw;
+
+    background-color: white;
+
+    border-radius: 2vw;
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+
+    filter: drop-shadow(1vw 2vw 1vw rgb(190, 190, 190));
+
+    text-align: left;
+}
+
+.calendar-item-date {
+    display: inline;
+
+    margin-left: 1vw;
+
+    font-weight: bold;
+    font-size: 1.2vw;
+
+    color: #44a5ff;
+}
+
+.calendar-item-time {
+    display: inline;
+
+    text-align: end;
+    
+    margin-left: 4vw;
+
+    font-weight: bold;
+    font-size: 1.2vw;
+
+    color: #44a5ff;
 }
 
 /*PROGRESS BAR*/
